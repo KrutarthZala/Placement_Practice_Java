@@ -8,10 +8,13 @@ public class Pattern13 {
         int row = sc.nextInt();
 
 
-        for (int i = 1; i <= row; i++) {
+        for (int i = 0; i < row; i++) {
             
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
+            int icj = 1;
+            for (int j = 0; j <= i; j++) {
+                System.out.print(icj +" ");
+                int icjp1 = icj * (i - j) / (j + 1);
+                icj = icjp1;
             }
 
             System.out.println();
