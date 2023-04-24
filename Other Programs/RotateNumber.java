@@ -19,10 +19,10 @@ public class RotateNumber {
         }
 
         k = k % nod; //*If k is greater than nod */
-        if (k < 0) { //*If number is negative */
+        if (k < 0) { //*If k is negative */
             k = k + nod;
         }
-        
+
         int div = 1;
         int mul = 1;
         for (int i = 1; i <= nod; i++) {
