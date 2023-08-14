@@ -27,7 +27,7 @@ public class CalculatePercentile
         }
         //* System.out.println(count);
         
-        float percentile = (count / (float)total) * 100;
+        float percentile = (count / total) * 100;
         System.out.printf("Your percentile is %.2f ",percentile);
     }
 }
